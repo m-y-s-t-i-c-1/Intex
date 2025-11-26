@@ -1,34 +1,31 @@
-// init.js — DOM initialization and event wiring (depends on other files)
+// init.js — DOM initialization and event wiring
 
 function initializeDomElements() {
-    domElements.searchOverlay = document.getElementById('search-overlay');
-    domElements.searchInput = document.getElementById('search-input');
-        // support multiple ID naming variants (historical/camelCase vs kebab-case)
-        function byAnyId(...ids) {
-            for (const id of ids) {
-                const el = document.getElementById(id);
-                if (el) return el;
-            }
-            return null;
+    function byAnyId(...ids) {
+        for (const id of ids) {
+            const el = document.getElementById(id);
+            if (el) return el;
         }
+        return null;
+    }
 
-        domElements.searchOverlay = byAnyId('search-overlay');
-        domElements.searchInput = byAnyId('search-input');
-        domElements.searchBtn = byAnyId('search-btn', 'searchBtn');
-        domElements.cartBtn = byAnyId('cart-btn', 'cartBtn');
-        domElements.themeBtn = byAnyId('theme-btn', 'themeBtn');
-        domElements.themeIcon = byAnyId('theme-icon');
-        domElements.categoryMenu = byAnyId('category-menu');
-        domElements.productListContainer = byAnyId('product-list-container', 'productListContainer');
-        domElements.productListGrid = byAnyId('productListGrid', 'product-list-grid');
-        domElements.currentCategoryTitle = byAnyId('currentCategoryTitle', 'current-category-title');
-        domElements.backToCategoriesBtn = byAnyId('backToCategoriesBtn', 'backToCategories');
-        domElements.sidebarFilterList = byAnyId('sidebar-filter-list', 'filterList');
-        domElements.cartOverlay = byAnyId('cart-overlay');
-        domElements.cartItemsContainer = byAnyId('cart-items-container', 'cart-items');
-        domElements.cartTotalElement = byAnyId('cart-total', 'cartTotal');
-        domElements.cartItemCount = byAnyId('cart-item-count', 'cartCount');
-        domElements.paginationContainer = byAnyId('pagination-container', 'pagination-controls');
+    domElements.searchOverlay = byAnyId('search-overlay');
+    domElements.searchInput = byAnyId('search-input');
+    domElements.searchBtn = byAnyId('search-btn', 'searchBtn');
+    domElements.cartBtn = byAnyId('cart-btn', 'cartBtn');
+    domElements.themeBtn = byAnyId('theme-btn', 'themeBtn');
+    domElements.themeIcon = byAnyId('theme-icon');
+    domElements.categoryMenu = byAnyId('category-menu');
+    domElements.productListContainer = byAnyId('product-list-container', 'productListContainer');
+    domElements.productListGrid = byAnyId('productListGrid', 'product-list-grid');
+    domElements.currentCategoryTitle = byAnyId('currentCategoryTitle', 'current-category-title');
+    domElements.backToCategoriesBtn = byAnyId('backToCategoriesBtn', 'backToCategories');
+    domElements.sidebarFilterList = byAnyId('sidebar-filter-list', 'filterList');
+    domElements.cartOverlay = byAnyId('cart-overlay');
+    domElements.cartItemsContainer = byAnyId('cart-items-container', 'cart-items');
+    domElements.cartTotalElement = byAnyId('cart-total', 'cartTotal');
+    domElements.cartItemCount = byAnyId('cart-item-count', 'cartCount');
+    domElements.paginationContainer = byAnyId('pagination-container', 'pagination-controls');
     domElements.domInitialized = true;
 }
 
@@ -90,20 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
     showCategories(true);
     renderCart();
 
-// Backwards-compatible global aliases for older HTML that used different function names
-window.viewProducts = function(categoryId, subTitle) {
-    // older HTML passed subtitle — ignore and use our i18n titles
-    return showProducts(categoryId);
-};
+    window.viewProducts = function(categoryId) {
+        return showProducts(categoryId);
+    };
 
-window.backToPrevious = function() {
-    return goBack();
-};
+    window.backToPrevious = function() {
+        return goBack();
+    };
 
-// Older HTML used `setLanguage`; new API is `setCurrentLang`
-window.setLanguage = function(lang) {
-    return setCurrentLang(lang);
-};
+    window.setLanguage = function(lang) {
+        return setCurrentLang(lang);
+    };
 
     document.querySelectorAll('.accordion-header').forEach(btn => {
         btn.addEventListener('click', () => {

@@ -62,7 +62,6 @@ function debounce(func, delay) {
     };
 }
 
-// ===== Search helpers (moved from monolithic file)
 function openSearch() {
     if (!domElements.searchOverlay) return;
     domElements.searchOverlay.style.display = 'flex';
@@ -74,10 +73,6 @@ function closeSearch() {
     domElements.searchOverlay.style.display = 'none';
 }
 
-/**
- * performSearch accepts either a string query or a DOM Event (from onsubmit).
- * If an Event is passed, we preventDefault() and read the input value.
- */
 function performSearch(queryOrEvent) {
     let q = '';
     if (!queryOrEvent) {

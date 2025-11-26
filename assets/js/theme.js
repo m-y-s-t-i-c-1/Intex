@@ -12,7 +12,7 @@ function applyTheme(isDark) {
         localStorage.setItem('darkMode', preferred ? 'true' : 'false');
         if (domElements.themeIcon) {
             domElements.themeIcon.classList.remove('fa-moon', 'fa-sun');
-            domElements.themeIcon.classList.add(preferred ? 'fa-moon' : 'fa-sun');
+            domElements.themeIcon.classList.add(preferred ? 'fa-sun' : 'fa-moon');
         }
     } catch (err) {
         console.error('applyTheme error:', err);
