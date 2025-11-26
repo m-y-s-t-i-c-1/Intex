@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">Produse INTEX | Catalog Complet</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../css/produse.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">INTEX<span>MOLDOVA</span></div>
+
+        <ul class="nav-menu">
+            <li><a href="../main.html" data-i18n="menu_home">Acasă</a></li>
+            <li><a href="#" class="active" data-i18n="menu_products">Produse</a></li>
+            <li><a href="../main.html#despre" data-i18n="menu_about">Despre Noi</a></li>
+            <li><a href="../pagini/FAQ.html" data-i18n="menu_faq">FAQ</a></li>
+            <li><a href="../pagini/returnare.html" data-i18n="menu_policy">Politica de Retur</a></li>
+            <li><a href="../main.html#contact" data-i18n="menu_contact">Contacte</a></li>
+        </ul>
+
+        <div class="nav-controls">
+            <button class="search-btn" id="searchBtn" title="Căutare">
+                <i class="fas fa-search"></i>
+            </button>
+
+            <button class="cart-btn" id="cartBtn" title="Coșul Meu">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+            <div class="lang-switch">
+                <span class="lang-opt active" data-lang="ro" onclick="setLanguage('ro')">RO</span>
+                <span style="opacity: 0.3">|</span>
+                <span class="lang-opt" data-lang="ru" onclick="setLanguage('ru')">RU</span>
+                <span style="opacity: 0.3">|</span>
+                <span class="lang-opt" data-lang="en" onclick="setLanguage('en')">EN</span>
+            </div>
+
+            <div class="theme-toggle" id="themeBtn">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="header-content">
+            <h1 data-i18n="products_title">Catalogul Nostru Complet</h1>
+            <p data-i18n="products_subtitle">Explorați cele 14 categorii de produse Intex, de la piscine la accesorii și piese de schimb.</p>
+        </div>
+    </header>
+
+    <section class="products-section">
+
+        <aside class="sidebar">
+            <h3 data-i18n="filter_title"><i class="fas fa-filter"></i> Filtru Rapid</h3>
+            <ul class="filter-list" id="filterList">
+                <li data-i18n="filter_all" data-filter="all" class="active">Toate Produsele</li>
+                <li data-i18n="cat_pools" data-filter="pools">Piscine INTEX</li>
+                <li data-i18n="cat_accessories" data-filter="accessories">Accesorii</li>
+                <li data-i18n="cat_spares" data-filter="spares">Piese de Schimb</li>
+            </ul>
+        </aside>
+
+        <div class="product-content-wrapper">
+
+            <!-- CATEGORIES GRID -->
+            <div class="category-grid" id="categoryMenu">
+                <div class="category-card" data-category-id="metal-frame" onclick="viewProducts('metal-frame', 'Piscine cu Cadru Metalic')">
+                    <img src="../assets/img/cat-frame-pool.jpg" alt="">
+                    <h4 data-i18n="cat_title_metal">Piscine</h4>
+                    <p data-i18n="cat_desc_metal">Durabilitate maximă și instalare rapidă.</p>
+                    <button class="btn-category-view" data-i18n="cat_view_btn">Vezi Produsele</button>
+                </div>
+
+                <div class="category-card" data-category-id="joaca" onclick="viewProducts('joaca', 'Locuri de joacă')">
+                    <img src="../assets/img/cat-frame-pool.jpg" alt="">
+                    <h4>Locuri de joacă</h4>
+                    <p>Produse pentru distracție în siguranță.</p>
+                    <button class="btn-category-view">Vezi Produsele</button>
+                </div>
+
+                <div class="category-card" data-category-id="copii-pools" onclick="viewProducts('copii-pools', 'Piscine pentru Copii')">
+                    <img src="../assets/img/cat-kids-pool.jpg" alt="">
+                    <h4>Piscine pentru Copii</h4>
+                    <p>Piscine sigure și colorate pentru distracție în familie.</p>
+                    <button class="btn-category-view">Vezi Produsele</button>
+                </div>
+
+            </div>
+
+            <!-- PRODUCT LIST / GRID (vizibil când selectezi o categorie) -->
+            <div class="product-list-container hidden" id="productListContainer">
+    <button class="btn-back" id="backToCategories" onclick="backToPrevious()">
+        <i class="fas fa-arrow-left"></i> Înapoi la Categorii
+    </button>
+
+    <h2 id="currentCategoryTitle" class="list-title"></h2>
+
+    <div class="product-list-grid" id="productListGrid">
+        <div class="product-card" data-product-id="54983">
+            <span class="badge sale" data-i18n="badge_sale">REDUCERE</span>
+            <img src="../assets/img/pool-example.jpg" alt="Piscina Ultra Frame 457x122cm">
+            <h5 class="product-title">Piscina Ultra Frame 457x122cm</h5>
+            <p class="product-desc">Include pompă de filtrare Krystal Clear și scară.</p>
+            <div class="product-price">
+                <span class="price-new">4 999 MDL</span>
+                <span class="price-old">5 700 MDL</span>
+            </div>
+            <button class="btn-main btn-add-cart" onclick="addToCart('Piscina Ultra Frame', 4999)">
+                <i class="fas fa-shopping-cart"></i> Adaugă în coș
+            </button>
+        </div>
+
+        <div class="product-card" data-product-id="28604">
+            <img src="../assets/img/filter-pump-example.jpg" alt="Pompa de filtrare cartuș 2006 L/h">
+            <h5 class="product-title">Pompă de filtrare cartuș 2006 L/h</h5>
+            <p class="product-desc">Pentru piscine de dimensiuni mici și medii.</p>
+            <div class="product-price">
+                <span class="price-new">850 MDL</span>
+            </div>
+            <button class="btn-main btn-add-cart" onclick="addToCart('Pompa de filtrare', 850)">
+                <i class="fas fa-shopping-cart"></i> Adaugă în coș
+            </button>
+        </div>  
+
+    </div>
+
+    <div id="pagination-controls" class="pagination"></div>
+
+</div>
+
+
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 data-i18n="contact_title">Contactează-ne</h3>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong data-i18n="addr_label">Adresa:</strong>
+                        <p>Strada Calea Orheiului 123, Chișinău, Moldova</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong data-i18n="phone_label">Telefon:</strong>
+                        <p>+373 69 123 456</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong data-i18n="email_label">Email:</strong>
+                        <p>info@intex-moldova.md</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong data-i18n="hours_label">Program:</strong>
+                        <p data-i18n="hours_val">Luni - Duminică: 09:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.166412586737!2d28.8504359!3d47.0396039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c978013e840d0f%3A0xf6f6f6f6f6f6f6f6!2sStrada%20Calea%20Orheiului%20123%2C%20Chi%C8%99in%C4%83u!5e0!3m2!1sro!2smd!4v1699999999999!5m2!1sro!2smd"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">© 2023 Intex Moldova. All rights reserved.</div>
+    </section>
+
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+            <span class="close-btn" onclick="closeSearch()">×</span>
+            <form onsubmit="performSearch(event)">
+                <input type="text" id="search-input" placeholder="Căutați produse, accesorii, servicii...">
+                <button class="btn-main" type="submit">Căută</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay">
+        <div class="cart-content">
+            <span class="close-btn" onclick="closeCart()">×</span>
+            <h2 data-i18n="cart_title">Coșul de Cumpărături</h2>
+
+            <div id="cart-items" class="cart-items-container"></div>
+
+            <div class="cart-summary">
+                <p data-i18n="cart_total">Total:</p>
+                <strong id="cartTotal">0.00 MDL</strong>
+            </div>
+
+            <a href="checkout.html" class="btn-main checkout-btn" data-i18n="cart_checkout">Finalizează Comanda</a>
+        </div>
+    </div>
+
+</div>
+
+    <!-- Modular JS files (split from produse.js) -->
+    <script src="../js/data.js"></script>
+    <script src="../js/state.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/render.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/init.js"></script>
+
+</body>
+</html>

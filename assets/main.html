@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEX Premium Moldova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../assets/main.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">INTEX<span>MOLDOVA</span></div>
+        
+        <ul class="nav-menu">
+            <li><a href="#" data-i18n="menu_home">Acasă</a></li>
+            <li><a href="../assets/pagini/produse.html" data-i18n="menu_products">Produse</a></li>
+            <li><a href="#despre" data-i18n="menu_about">Despre Noi</a></li>
+            <li><a href="../assets/pagini/FAQ.html" data-i18n="menu_faq">FAQ</a></li>
+            <li><a href="../assets/pagini/returnare.html" data-i18n="menu_policy">Politica de Retur</a></li>
+            <li><a href="#contact" data-i18n="menu_contact">Contacte</a></li>
+        </ul>
+
+        <div class="nav-controls">
+             <button class="search-btn" id="searchBtn" title="Căutare">
+                <i class="fas fa-search"></i>
+            </button>
+            
+            <div class="lang-switch">
+                <span class="lang-opt active" onclick="setLanguage('ro')">RO</span>
+                <span style="opacity: 0.3">|</span>
+                <span class="lang-opt" onclick="setLanguage('ru')">RU</span>
+                <span style="opacity: 0.3">|</span>
+                <span class="lang-opt" onclick="setLanguage('en')">EN</span>
+            </div>
+
+            <div class="theme-toggle" id="themeBtn">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Vara ta începe cu Intex</h1>
+            <p data-i18n="hero_subtitle">Calitate premium, instalare ușoară și distracție garantată pentru întreaga familie.</p>
+            <a href="catalog.html" class="btn-main" data-i18n="hero_btn">Vezi Catalogul <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <section class="about-section" id="despre">
+        <div class="about-text">
+            <h2 data-i18n="about_title">Cine suntem noi?</h2>
+            <p data-i18n="about_p1">Suntem unicul distribuitor oficial Intex în Moldova care îți aduce vacanța chiar la tine în curte. Cu o experiență de peste 10 ani, ne dedicăm aducerii zâmbetelor pe fețele familiilor.</p>
+            <p data-i18n="about_p2">Produsele noastre sunt recunoscute internațional pentru durabilitate și inovație. Fie că îți dorești o piscină imensă cu cadru metalic sau o piscină gonflabilă pentru cei mici, noi avem soluția.</p>
+        </div>
+        <div class="about-image">
+            <img src="../assets/img/intex.jpg" alt="Viziune modernă Intex">
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 data-i18n="contact_title">Contactează-ne</h3>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong data-i18n="addr_label">Adresa:</strong>
+                        <p>Strada Calea Orheiului 123, Chișinău, Moldova</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong data-i18n="phone_label">Telefon:</strong>
+                        <p>+373 69 123 456</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong data-i18n="email_label">Email:</strong>
+                        <p>info@intex-moldova.md</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong data-i18n="hours_label">Program:</strong>
+                        <p data-i18n="hours_val">Luni - Duminică: 09:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.689878777776!2d28.85818361561795!3d47.02685797915064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3497191947%3A0x895733491433660!2sChisinau%2C%20Moldova!5e0!3m2!1sen!2s!4v1685634845386!5m2!1sen!2s" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2023 Intex Moldova. All rights reserved.
+        </div>
+    </section>
+    
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+            <span class="close-btn" onclick="closeSearch()">&times;</span>
+            <input type="text" id="search-input" placeholder="Căutați produse, accesorii, servicii...">
+            <a href="#" class="btn-main" onclick="performSearch(event)">Căută</a>
+        </div>
+    </div>
+
+    <script src="../assets/main.js"></script>
+</body>
+</html>
