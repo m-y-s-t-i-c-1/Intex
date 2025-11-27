@@ -1,4 +1,3 @@
-// pagini.js — page-specific initialization
 
 function initializeAccordion() {
     document.querySelectorAll('.accordion-header').forEach(button => {
