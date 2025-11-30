@@ -96,7 +96,7 @@
         if (!container) return;
         container.innerHTML = '';
         if (!State.cart.length) {
-            container.innerHTML = `<p style="text-align:center">Coșul este gol</p>`;
+            container.innerHTML = `<p class="cart-empty" data-i18n="cart_empty">Coșul este gol</p>`;
             if (totalEl) totalEl.innerText = '0.00 LEI';
             return;
         }
@@ -107,18 +107,57 @@
             if (!p) return;
             const line = (p.price||0) * (item.qty||1);
             total += line;
+            
+            // Get product title in current language
+            let title = p.title;
+            if (p.title && typeof p.title === 'object') {
+                const lang = getLang();
+                title = p.title[lang] || p.title.ro || Object.values(p.title)[0] || 'Produs';
+            }
+            
             const div = document.createElement('div');
             div.className = 'cart-item';
-            div.style.display = 'flex';
-            div.style.justifyContent = 'space-between';
-            div.style.marginBottom = '8px';
-            div.innerHTML = `<div><strong>${(p.title && p.title.ro) ? p.title.ro : (p.title||'Produs')}</strong><br><small>${formatPrice(p.price)} x ${item.qty}</small></div>
-                <div style="display:flex; gap:6px; align-items:center;">
-                    <button onclick="window.changeQty('${item.id}', -1)">-</button>
-                    <span>${formatPrice(line)}</span>
-                    <button onclick="window.changeQty('${item.id}', 1)">+</button>
-                    <button onclick="window.removeFromCart('${item.id}')" style="background:none;border:none;color:#c00;cursor:pointer"><i class="fas fa-trash"></i></button>
-                </div>`;
+            
+            const infoDiv = document.createElement('div');
+            infoDiv.innerHTML = `
+                <strong>${title}</strong>
+                <small>${formatPrice(p.price)} x ${item.qty}</small>
+            `;
+            
+            const controlsDiv = document.createElement('div');
+            controlsDiv.className = 'cart-item-controls';
+            
+            const minusBtn = document.createElement('button');
+            minusBtn.textContent = '−';
+            minusBtn.onclick = () => window.changeQty(item.id, -1);
+            
+            const qtySpan = document.createElement('span');
+            qtySpan.textContent = item.qty;
+            qtySpan.style.minWidth = '20px';
+            qtySpan.style.textAlign = 'center';
+            
+            const plusBtn = document.createElement('button');
+            plusBtn.textContent = '+';
+            plusBtn.onclick = () => window.changeQty(item.id, 1);
+            
+            const priceSpan = document.createElement('span');
+            priceSpan.className = 'cart-item-price';
+            priceSpan.textContent = formatPrice(line);
+            
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'cart-item-delete';
+            deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
+            deleteBtn.title = 'Șterge din coș';
+            deleteBtn.onclick = () => window.removeFromCart(item.id);
+            
+            controlsDiv.appendChild(minusBtn);
+            controlsDiv.appendChild(qtySpan);
+            controlsDiv.appendChild(plusBtn);
+            controlsDiv.appendChild(priceSpan);
+            controlsDiv.appendChild(deleteBtn);
+            
+            div.appendChild(infoDiv);
+            div.appendChild(controlsDiv);
             container.appendChild(div);
         });
         if (totalEl) totalEl.innerText = formatPrice(total);
@@ -730,8 +769,21 @@
     }
 
     // Cart overlay controls
-    function openCart() { const el = byId('cart-overlay'); if (el) el.style.display='flex'; }
-    function closeCart() { const el = byId('cart-overlay'); if (el) el.style.display='none'; }
+    function openCart() {
+        const el = byId('cart-overlay');
+        if (el) {
+            el.classList.add('active');
+            el.style.display = 'flex';
+        }
+    }
+
+    function closeCart() {
+        const el = byId('cart-overlay');
+        if (el) {
+            el.classList.remove('active');
+            el.style.display = 'none';
+        }
+    }
 
     // Init
     function init() {
