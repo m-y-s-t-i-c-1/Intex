@@ -895,3 +895,56 @@ body.dark-mode .page-btn.active {
         color: var(--text-muted);
     }
 }
+
+/* Pagination Styling */
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.page-btn {
+    padding: 10px 14px;
+    margin: 5px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    color: var(--text-main);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-btn:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+.page-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    font-weight: 600;
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.4);
+}
+
+body.dark-mode .page-btn {
+    background: rgba(30, 41, 59, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+}
+
+body.dark-mode .page-btn:hover,
+body.dark-mode .page-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}

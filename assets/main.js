@@ -63,11 +63,8 @@ const translations = {
 
 const searchOverlay = document.getElementById('search-overlay');
 const searchInput = document.getElementById('search-input');
-const themeBtn = document.getElementById('themeBtn');
-const themeIcon = themeBtn.querySelector('i');
 const i18nElements = document.querySelectorAll('[data-i18n]');
 const langOptions = document.querySelectorAll('.lang-opt');
-
 
 function openSearch() {
     searchOverlay.style.display = 'flex';
@@ -84,16 +81,25 @@ function performSearch(event) {
         event.preventDefault(); 
     }
     
-    const query = searchInput.value.trim();
+    const query = (searchInput && searchInput.value) ? searchInput.value.trim() : '';
 
     if (query.length > 0) {
-        alert(`Caută: "${query}". (Acest lucru va redirecționa către pagina de produse)`);
-        closeSearch();
+        // Check if we're on the products page
+        const isOnProductsPage = window.location.pathname.includes('produse.html') || 
+                                 (typeof window.performSearch === 'function' && window.performSearch !== performSearch);
+        
+        if (isOnProductsPage && window.performSearch && typeof window.performSearch === 'function') {
+            // We're on produse.html, call the local performSearch
+            window.performSearch(query);
+            closeSearch();
+        } else {
+            // Redirect to products page with search (use correct relative path)
+            window.location.href = './pagini/produse.html?search=' + encodeURIComponent(query);
+        }
     } else {
         alert("Vă rugăm să introduceți un termen de căutare.");
     }
 }
-
 
 function setLanguage(lang) {
     if (!translations[lang]) return;
@@ -119,33 +125,13 @@ function setLanguage(lang) {
             localStorage.setItem('intex_language', lang);
         }
     });
+    // Notify other scripts that language changed
+    try { window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } })); } catch (e) { /* ignore */ }
 }
-
-
-function applyTheme(isDark) {
-    if (isDark) {
-        document.body.classList.add('dark-mode');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-        localStorage.setItem('intex_theme', 'dark');
-    } else {
-        document.body.classList.remove('dark-mode');
-        themeIcon.classList.replace('fa-sun', 'fa-moon');
-        localStorage.setItem('intex_theme', 'light');
-    }
-}
-
-themeBtn.addEventListener('click', () => {
-    const isDark = !document.body.classList.contains('dark-mode');
-    applyTheme(isDark);
-});
-
 
 function initialize() {
     const savedLang = localStorage.getItem('intex_language') || 'ro';
     setLanguage(savedLang);
-
-    const savedTheme = localStorage.getItem('intex_theme') === 'dark';
-    applyTheme(savedTheme);
 
     document.getElementById('searchBtn').addEventListener('click', openSearch);
     

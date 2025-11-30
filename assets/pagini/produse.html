@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="page_title">Produse INTEX | Catalog Complet</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../css/produse.css">
 </head>
+
 <body>
 
     <nav>
@@ -44,7 +47,7 @@
             </div>
 
             <div class="theme-toggle" id="themeBtn">
-                <i class="fas fa-moon"></i>
+                <i class="fas fa-moon" id="theme-icon"></i>
             </div>
         </div>
     </nav>
@@ -52,7 +55,8 @@
     <header class="page-header">
         <div class="header-content">
             <h1 data-i18n="products_title">Catalogul Nostru Complet</h1>
-            <p data-i18n="products_subtitle">Explorați cele 14 categorii de produse Intex, de la piscine la accesorii și piese de schimb.</p>
+            <p data-i18n="products_subtitle">Explorați cele 14 categorii de produse Intex, de la piscine la accesorii și
+                piese de schimb.</p>
         </div>
     </header>
 
@@ -71,70 +75,23 @@
         <div class="product-content-wrapper">
 
             <!-- CATEGORIES GRID -->
-            <div class="category-grid" id="categoryMenu">
-                <div class="category-card" data-category-id="metal-frame" onclick="viewProducts('metal-frame', 'Piscine cu Cadru Metalic')">
-                    <img src="../assets/img/cat-frame-pool.jpg" alt="">
-                    <h4 data-i18n="cat_title_metal">Piscine</h4>
-                    <p data-i18n="cat_desc_metal">Durabilitate maximă și instalare rapidă.</p>
-                    <button class="btn-category-view" data-i18n="cat_view_btn">Vezi Produsele</button>
-                </div>
 
-                <div class="category-card" data-category-id="joaca" onclick="viewProducts('joaca', 'Locuri de joacă')">
-                    <img src="../assets/img/cat-frame-pool.jpg" alt="">
-                    <h4>Locuri de joacă</h4>
-                    <p>Produse pentru distracție în siguranță.</p>
-                    <button class="btn-category-view">Vezi Produsele</button>
-                </div>
+            <div class="category-grid" id="category-menu"></div>
 
-                <div class="category-card" data-category-id="copii-pools" onclick="viewProducts('copii-pools', 'Piscine pentru Copii')">
-                    <img src="../assets/img/cat-kids-pool.jpg" alt="">
-                    <h4>Piscine pentru Copii</h4>
-                    <p>Piscine sigure și colorate pentru distracție în familie.</p>
-                    <button class="btn-category-view">Vezi Produsele</button>
-                </div>
-
-            </div>
 
             <!-- PRODUCT LIST / GRID (vizibil când selectezi o categorie) -->
-            <div class="product-list-container hidden" id="productListContainer">
-    <button class="btn-back" id="backToCategories" onclick="backToPrevious()">
-        <i class="fas fa-arrow-left"></i> Înapoi la Categorii
-    </button>
+            <div class="product-list-container hidden" id="product-list-container">
+                <button class="btn-back" id="backToCategoriesBtn">
+                    <i class="fas fa-arrow-left"></i> <span id="backBtnText">Înapoi</span>
+                </button>
 
-    <h2 id="currentCategoryTitle" class="list-title"></h2>
+                <h2 id="currentCategoryTitle" class="list-title"></h2>
 
-    <div class="product-list-grid" id="productListGrid">
-        <div class="product-card" data-product-id="54983">
-            <span class="badge sale" data-i18n="badge_sale">REDUCERE</span>
-            <img src="../assets/img/pool-example.jpg" alt="Piscina Ultra Frame 457x122cm">
-            <h5 class="product-title">Piscina Ultra Frame 457x122cm</h5>
-            <p class="product-desc">Include pompă de filtrare Krystal Clear și scară.</p>
-            <div class="product-price">
-                <span class="price-new">4 999 MDL</span>
-                <span class="price-old">5 700 MDL</span>
+                <div class="product-list-grid" id="productListGrid"></div>
+
+                <div id="pagination-container" class="pagination"></div>
+
             </div>
-            <button class="btn-main btn-add-cart" onclick="addToCart('Piscina Ultra Frame', 4999)">
-                <i class="fas fa-shopping-cart"></i> Adaugă în coș
-            </button>
-        </div>
-
-        <div class="product-card" data-product-id="28604">
-            <img src="../assets/img/filter-pump-example.jpg" alt="Pompa de filtrare cartuș 2006 L/h">
-            <h5 class="product-title">Pompă de filtrare cartuș 2006 L/h</h5>
-            <p class="product-desc">Pentru piscine de dimensiuni mici și medii.</p>
-            <div class="product-price">
-                <span class="price-new">850 MDL</span>
-            </div>
-            <button class="btn-main btn-add-cart" onclick="addToCart('Pompa de filtrare', 850)">
-                <i class="fas fa-shopping-cart"></i> Adaugă în coș
-            </button>
-        </div>  
-
-    </div>
-
-    <div id="pagination-controls" class="pagination"></div>
-
-</div>
 
 
         </div>
@@ -203,28 +160,21 @@
             <span class="close-btn" onclick="closeCart()">×</span>
             <h2 data-i18n="cart_title">Coșul de Cumpărături</h2>
 
-            <div id="cart-items" class="cart-items-container"></div>
+            <div id="cart-items-container" class="cart-items-container"></div>
 
             <div class="cart-summary">
                 <p data-i18n="cart_total">Total:</p>
-                <strong id="cartTotal">0.00 MDL</strong>
+                <strong id="cart-total">0.00 LEI</strong>
             </div>
 
             <a href="checkout.html" class="btn-main checkout-btn" data-i18n="cart_checkout">Finalizează Comanda</a>
         </div>
     </div>
 
-</div>
-
-    <!-- Modular JS files (split from produse.js) -->
     <script src="../js/data.js"></script>
-    <script src="../js/state.js"></script>
-    <script src="../js/utils.js"></script>
-    <script src="../js/nav.js"></script>
-    <script src="../js/render.js"></script>
-    <script src="../js/cart.js"></script>
     <script src="../js/theme.js"></script>
-    <script src="../js/init.js"></script>
-
+    <script src="../main.js"></script>
+    <script src="../js/produse.js"></script>
 </body>
+
 </html>
