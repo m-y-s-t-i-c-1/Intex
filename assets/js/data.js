@@ -45,36 +45,7 @@ const CATEGORIES_DATA = [
         },
         image: '../assets/img/cat-transport.jpg'
     },
-    {
-        id: 'pools',
-        icon: 'fas fa-water',
-        i18n_title: {
-            ro: 'Bazine',
-            ru: 'Бассейны',
-            en: 'Pools'
-        },
-        i18n_desc: {
-            ro: 'Bazine și accesorii',
-            ru: 'Бассейны и аксессуары',
-            en: 'Pools and accessories'
-        },
-        image: '../assets/img/cat-frame-pool.jpg'
-    },
-    {
-        id: 'accessories',
-        icon: 'fas fa-filter',
-        i18n_title: {
-            ro: 'Accesorii',
-            ru: 'Аксессуары',
-            en: 'Accessories'
-        },
-        i18n_desc: {
-            ro: 'Accesorii pentru bazine',
-            ru: 'Аксессуары для бассейнов',
-            en: 'Pool accessories'
-        },
-        image: '../assets/img/cat-filter-pump.jpg'
-    },
+    
     {
         id: 'baseine_intex',
         icon: 'fas fa-swimming-pool',
@@ -2019,7 +1990,7 @@ const PRODUCTS_DATA = [
             en: "Blue Rollerblades S (31-34)"
         },
         price: 850,
-        image: '../assets/img/role-9087-blue.jpg'
+        image: '../assets/img/role-9087-blue-s.jpg'
     },
     {
         id: 'r4',
@@ -2041,7 +2012,7 @@ const PRODUCTS_DATA = [
             en: "Pink Rollerblades S (31-34)"
         },
         price: 850,
-        image: '../assets/img/role-9087-pink.jpg'
+        image: '../assets/img/role-9087-pink-s.jpg'
     },
     {
         id: 'r6',
@@ -2620,7 +2591,7 @@ const PRODUCTS_DATA = [
             en: "Kids Scooter YS818"
         },
         price: 450,
-        image: '../assets/img/scooter-ys818.jpg'
+        image: '../assets/img/Kids Scooter YS818.jpg'
     },
     {
         id: 't68',
@@ -2983,7 +2954,7 @@ const PRODUCTS_DATA = [
         id: 'kp30',
         category: 'copii-pools',
         title: {
-            ro: 'BAZIN GONFLABIL COPII 305Х183Х56СМ, 999Л, ОТ 6 ANI',
+            ro: 'BAZIN GONFLABIL COPII 305Х183Х56СМ, 999L, ОТ 6 ANI',
             ru: '58484 ДЕТСКИЙ НАДУВНОЙ БАССЕЙН 305Х183Х56СМ, 999Л, ОТ 6 ЛЕТ',
             en: 'Kids Inflatable Pool 305x183x56cm 999L, 6+ years'
         },
@@ -3660,7 +3631,7 @@ const PRODUCTS_DATA = [
             en: 'Repair Kit'
         },
         price: 20,
-        image: '../assets/img/repair-kit.jpg'
+        image: '../assets/img/repair-kitt.jpg'
     },
     {
         id: 'sa51',

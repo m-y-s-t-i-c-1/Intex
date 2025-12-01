@@ -33,21 +33,47 @@
 
     function getAllProducts() {
         const list = [];
+
+        // accessory aliases that should be unified under the `swim-accessories` category
+        const accessoryAliases = ['accessories', 'swim-accessories', 'boats_pool_accessories', 'boats_care', 'pool_accessories'];
+
         if (typeof PRODUCTS_DATA !== 'undefined' && Array.isArray(PRODUCTS_DATA)) {
-            PRODUCTS_DATA.forEach(p => list.push(Object.assign({}, p, { image: normalizeImagePath(p.image) })));
+            PRODUCTS_DATA.forEach(p => {
+                // normalize image
+                let cat = p.category;
+
+                // remap generic 'pools' to 'baseine_intex' to avoid duplication
+                if (p.category && p.category.toString() === 'pools') cat = 'baseine_intex';
+
+                // remap accessory-like categories to unified 'swim-accessories'
+                if (p.category && accessoryAliases.includes(p.category.toString())) cat = 'swim-accessories';
+
+                list.push(Object.assign({}, p, { image: normalizeImagePath(p.image), category: cat }));
+            });
         }
+
         if (typeof POOLS_PRODUCTS !== 'undefined' && POOLS_PRODUCTS && Array.isArray(POOLS_PRODUCTS.pools)) {
-            POOLS_PRODUCTS.pools.forEach(p => list.push(Object.assign({
-                id: p.id || ('pool_' + Math.random().toString(36).slice(2, 9)),
-                category: 'pools',
-                subcategory: p.sub || p.subcategory || null,
-                title: p.title,
-                price: p.price || 0,
-                oldPrice: p.oldPrice || null,
-                image: normalizeImagePath(p.image),
-                __fromPools: true
-            }, p)));
+            POOLS_PRODUCTS.pools.forEach(p => {
+                // determine if this pool entry is actually an accessory (by sub/subcategory)
+                const pSub = (p.sub || p.subcategory || '').toString();
+                const isAccessorySub = accessoryAliases.includes(pSub);
+
+                const item = Object.assign({
+                    id: p.id || ('pool_' + Math.random().toString(36).slice(2, 9)),
+                    // default: pool items appear under 'baseine_intex' (accessory subs go to 'swim-accessories')
+                    category: isAccessorySub ? 'swim-accessories' : 'baseine_intex',
+                    subcategory: p.sub || p.subcategory || null,
+                    title: p.title,
+                    price: p.price || 0,
+                    oldPrice: p.oldPrice || null,
+                    image: normalizeImagePath(p.image),
+                    __fromPools: true
+                }, p);
+
+                list.push(item);
+            });
         }
+
         return list;
     }
 
