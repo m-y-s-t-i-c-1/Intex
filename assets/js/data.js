@@ -223,7 +223,7 @@ const POOLS_PRODUCTS = {
                 en: "PH minus granular 5kg"
             },
             price: 299,
-            image: '../assets/img/ph-minus-5kg.jpg'
+            image: '/assets/img/ph-minus-5kg.jpg'
         },
         {
             sub: "care_water",
@@ -233,7 +233,7 @@ const POOLS_PRODUCTS = {
                 en: "Alba Super K 1 liter"
             },
             price: 165,
-            image: '../assets/img/alba-super-k.jpg'
+            image: '/assets/img/alba-super-k.jpg'
         },
         {
             sub: "care_water",
@@ -243,7 +243,7 @@ const POOLS_PRODUCTS = {
                 en: "All-in-one multi tablets 20g/1kg"
             },
             price: 225,
-            image: '../assets/img/all-in-one-tablets.jpg'
+            image: '/assets/img/all-in-one-tablets.jpg'
         },
         {
             sub: "care_water",
@@ -253,7 +253,7 @@ const POOLS_PRODUCTS = {
                 en: "All-in-one multi tablets 200g/1kg"
             },
             price: 225,
-            image: '../assets/img/all-in-one-tablets-200g.jpg'
+            image: '/assets/img/all-in-one-tablets-200g.jpg'
         },
         {
             sub: "care_water",
@@ -263,7 +263,7 @@ const POOLS_PRODUCTS = {
                 en: "Kemochlor T-fast soluble tablets 20g/1kg"
             },
             price: 225,
-            image: '../assets/img/kemochlor-tablets.jpg'
+            image: '/assets/img/kemochlor-tablets.jpg'
         },
         {
             sub: "care_water",
@@ -273,7 +273,7 @@ const POOLS_PRODUCTS = {
                 en: "Filter sand Planet Pool Quarzsand 25Kg"
             },
             price: 359,
-            image: '../assets/img/filter-sand-25kg.jpg'
+            image: '/assets/img/filter-sand-25kg.jpg'
         },
         {
             sub: "care_water",
@@ -283,7 +283,7 @@ const POOLS_PRODUCTS = {
                 en: "Tablet tester 2 in 1 (pH, Cl)"
             },
             price: 250,
-            image: '../assets/img/tablet-tester.jpg'
+            image: '/assets/img/tablet-tester.jpg'
         },
 
         // Piese de Schimb Intex
@@ -295,7 +295,7 @@ const POOLS_PRODUCTS = {
                 en: "10090 Intex Liner for frame pool Prism Frame 457x122cm"
             },
             price: 6500,
-            image: '../assets/img/intex-liner-10090.jpg'
+            image: '/assets/img/intex-liner-10090.jpg'
         },
         {
             sub: "intex_parts",
@@ -305,7 +305,7 @@ const POOLS_PRODUCTS = {
                 en: "10127 Intex Rubber plug for Intex pools"
             },
             price: 20,
-            image: '../assets/img/rubber-plug.jpg'
+            image: '/assets/img/rubber-plug.jpg'
         },
         {
             sub: "intex_parts",
@@ -315,7 +315,7 @@ const POOLS_PRODUCTS = {
                 en: "10201 Intex Adapter for drain valve"
             },
             price: 50,
-            image: '../assets/img/drain-valve-adapter.jpg'
+            image: '/assets/img/drain-valve-adapter.jpg'
         },
         {
             sub: "intex_parts",
@@ -325,7 +325,7 @@ const POOLS_PRODUCTS = {
                 en: "10256 Intex Nut for mesh connector 38 mm"
             },
             price: 40,
-            image: '../assets/img/connector-nut.jpg'
+            image: '/assets/img/connector-nut.jpg'
         },
         {
             sub: "intex_parts",
@@ -335,7 +335,7 @@ const POOLS_PRODUCTS = {
                 en: "10262 Intex Sealing ring"
             },
             price: 50,
-            image: '../assets/img/sealing-ring.jpg'
+            image: '/assets/img/sealing-ring.jpg'
         },
         {
             sub: "intex_parts",
@@ -345,7 +345,7 @@ const POOLS_PRODUCTS = {
                 en: "10383 Intex Connecting post"
             },
             price: 135,
-            image: '../assets/img/connecting-post.jpg'
+            image: '/assets/img/connecting-post.jpg'
         },
         {
             sub: "intex_parts",
@@ -355,7 +355,7 @@ const POOLS_PRODUCTS = {
                 en: "10919 Intex Horizontal beam (A) for Ultra Frame 549x274x132cm"
             },
             price: 250,
-            image: '../assets/img/horizontal-beam-a.jpg'
+            image: '/assets/img/horizontal-beam-a.jpg'
         },
         {
             sub: "intex_parts",
@@ -365,7 +365,7 @@ const POOLS_PRODUCTS = {
                 en: "10922 Intex Horizontal beam (B) Ultra Frame"
             },
             price: 250,
-            image: '../assets/img/horizontal-beam-b.jpg'
+            image: '/assets/img/horizontal-beam-b.jpg'
         },
         {
             sub: "intex_parts",
@@ -375,7 +375,7 @@ const POOLS_PRODUCTS = {
                 en: "10925 Intex Horizontal beam (C)"
             },
             price: 250,
-            image: '../assets/img/horizontal-beam-c.jpg'
+            image: '/assets/img/horizontal-beam-c.jpg'
         },
         {
             sub: "intex_parts",
@@ -385,7 +385,7 @@ const POOLS_PRODUCTS = {
                 en: "10928 Intex Horizontal beam (D)"
             },
             price: 250,
-            image: '../assets/img/horizontal-beam-d.jpg'
+            image: '/assets/img/horizontal-beam-d.jpg'
         },
         {
             sub: "intex_parts",
@@ -395,7 +395,7 @@ const POOLS_PRODUCTS = {
                 en: "10932 Intex Horizontal beam (F)"
             },
             price: 250,
-            image: '../assets/img/horizontal-beam-f.jpg'
+            image: '/assets/img/horizontal-beam-f.jpg'
         },
         {
             sub: "intex_parts",
@@ -405,7 +405,7 @@ const POOLS_PRODUCTS = {
                 en: "10934 Intex Corner connection"
             },
             price: 200,
-            image: '../assets/img/corner-connection.jpg'
+            image: '/assets/img/corner-connection.jpg'
         },
         {
             sub: "intex_parts",
@@ -415,7 +415,7 @@ const POOLS_PRODUCTS = {
                 en: "10937 Intex Support U-beam"
             },
             price: 900,
-            image: '../assets/img/u-support-beam.jpg'
+            image: '/assets/img/u-support-beam.jpg'
         },
         {
             sub: "intex_parts",
@@ -425,7 +425,7 @@ const POOLS_PRODUCTS = {
                 en: "10938 INTEX"
             },
             price: 115,
-            image: '../assets/img/intex-10938.jpg'
+            image: '/assets/img/intex-10938.jpg'
         },
         {
             sub: "intex_parts",
@@ -435,7 +435,7 @@ const POOLS_PRODUCTS = {
                 en: "10939 Intex Liner for frame pool 549x274x132"
             },
             price: 9999,
-            image: '../assets/img/intex-liner-10939.jpg'
+            image: '/assets/img/intex-liner-10939.jpg'
         },
         {
             sub: "intex_parts",
@@ -445,7 +445,7 @@ const POOLS_PRODUCTS = {
                 en: "11070 Intex inlet nozzle D-32"
             },
             price: 99,
-            image: '../assets/img/inlet-nozzle-d32.jpg'
+            image: '/assets/img/inlet-nozzle-d32.jpg'
         },
         {
             sub: "intex_parts",
@@ -455,7 +455,7 @@ const POOLS_PRODUCTS = {
                 en: "11157 Intex Plastic insert for beams"
             },
             price: 70,
-            image: '../assets/img/plastic-insert.jpg'
+            image: '/assets/img/plastic-insert.jpg'
         },
         {
             sub: "intex_parts",
@@ -465,7 +465,7 @@ const POOLS_PRODUCTS = {
                 en: "11228 Intex Sealing ring"
             },
             price: 50,
-            image: '../assets/img/sealing-ring-11228.jpg'
+            image: '/assets/img/sealing-ring-11228.jpg'
         },
         {
             sub: "intex_parts",
@@ -475,7 +475,7 @@ const POOLS_PRODUCTS = {
                 en: "11374 INTEX Titanium electrode 26666"
             },
             price: 2300,
-            image: '../assets/img/titanium-electrode.jpg'
+            image: '/assets/img/titanium-electrode.jpg'
         },
         {
             sub: "intex_parts",
@@ -485,7 +485,7 @@ const POOLS_PRODUCTS = {
                 en: "11412 INTEX L-shaped sealing ring"
             },
             price: 50,
-            image: '../assets/img/l-sealing-ring.jpg'
+            image: '/assets/img/l-sealing-ring.jpg'
         },
         {
             sub: "intex_parts",
@@ -495,7 +495,7 @@ const POOLS_PRODUCTS = {
                 en: "12365 Intex outlet nozzle D-32"
             },
             price: 99,
-            image: '../assets/img/outlet-nozzle-d32.jpg'
+            image: '/assets/img/outlet-nozzle-d32.jpg'
         },
         {
             sub: "intex_parts",
@@ -505,7 +505,7 @@ const POOLS_PRODUCTS = {
                 en: "12436 Intex Ultra Frame liner 549x132cm"
             },
             price: 9999,
-            image: '../assets/img/ultra-frame-liner-12436.jpg'
+            image: '/assets/img/ultra-frame-liner-12436.jpg'
         },
         {
             sub: "intex_parts",
@@ -515,7 +515,7 @@ const POOLS_PRODUCTS = {
                 en: "12465 Intex Support cap Prism Frame"
             },
             price: 50,
-            image: '../assets/img/support-cap.jpg'
+            image: '/assets/img/support-cap.jpg'
         },
         {
             sub: "intex_parts",
@@ -525,7 +525,7 @@ const POOLS_PRODUCTS = {
                 en: "12802 Intex T-connector Prism Frame"
             },
             price: 150,
-            image: '../assets/img/t-connector.jpg'
+            image: '/assets/img/t-connector.jpg'
         },
         {
             sub: "intex_parts",
@@ -535,7 +535,7 @@ const POOLS_PRODUCTS = {
                 en: "12808 Intex Horizontal beam"
             },
             price: 150,
-            image: '../assets/img/horizontal-beam-12808.jpg'
+            image: '/assets/img/horizontal-beam-12808.jpg'
         },
         {
             sub: "intex_parts",
@@ -545,7 +545,7 @@ const POOLS_PRODUCTS = {
                 en: "12818 Intex Vertical beam"
             },
             price: 150,
-            image: '../assets/img/vertical-beam.jpg'
+            image: '/assets/img/vertical-beam.jpg'
         },
         {
             sub: "intex_parts",
@@ -555,7 +555,7 @@ const POOLS_PRODUCTS = {
                 en: "12928 INTEX Brushes for robot vacuum 28005"
             },
             price: 250,
-            image: '../assets/img/vacuum-brushes.jpg'
+            image: '/assets/img/vacuum-brushes.jpg'
         },
         {
             sub: "intex_parts",
@@ -565,7 +565,7 @@ const POOLS_PRODUCTS = {
                 en: "26670 Chlorine generator Krystal Clear Saltwater System Intex"
             },
             price: 4599,
-            image: '../assets/img/chlorine-generator.jpg'
+            image: '/assets/img/chlorine-generator.jpg'
         },
         {
             sub: "intex_parts",
@@ -575,7 +575,7 @@ const POOLS_PRODUCTS = {
                 en: "26726-carcas INTEX"
             },
             price: 1500,
-            image: '../assets/img/intex-26726.jpg'
+            image: '/assets/img/intex-26726.jpg'
         },
         {
             sub: "intex_parts",
@@ -585,7 +585,7 @@ const POOLS_PRODUCTS = {
                 en: "29059 Connecting hose 32mm"
             },
             price: 80,
-            image: '../assets/img/connecting-hose-32mm.jpg'
+            image: '/assets/img/connecting-hose-32mm.jpg'
         },
         {
             sub: "intex_parts",
@@ -595,7 +595,7 @@ const POOLS_PRODUCTS = {
                 en: "29061 Adapter set B"
             },
             price: 99,
-            image: '../assets/img/adapter-set-b.jpg'
+            image: '/assets/img/adapter-set-b.jpg'
         },
         {
             sub: "intex_parts",
@@ -605,7 +605,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 10095 Metal Frame liner 305x76cm"
             },
             price: 1700,
-            image: '../assets/img/metal-frame-liner-10095.jpg'
+            image: '/assets/img/metal-frame-liner-10095.jpg'
         },
         {
             sub: "intex_parts",
@@ -615,7 +615,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 10096 Metal Frame liner 366x76cm"
             },
             price: 1999,
-            image: '../assets/img/metal-frame-liner-10096.jpg'
+            image: '/assets/img/metal-frame-liner-10096.jpg'
         },
         {
             sub: "intex_parts",
@@ -625,7 +625,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 10318/12129 Easy Set liner 305x76 cm"
             },
             price: 900,
-            image: '../assets/img/easy-set-liner-10318.jpg'
+            image: '/assets/img/easy-set-liner-10318.jpg'
         },
         {
             sub: "intex_parts",
@@ -635,7 +635,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 11588 Liner 183x51cm Easy Set"
             },
             price: 399,
-            image: '../assets/img/easy-set-liner-11588.jpg'
+            image: '/assets/img/easy-set-liner-11588.jpg'
         },
         {
             sub: "intex_parts",
@@ -645,7 +645,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 12135A Liner 400x200x100cm"
             },
             price: 6500,
-            image: '../assets/img/liner-12135a.jpg'
+            image: '/assets/img/liner-12135a.jpg'
         },
         {
             sub: "intex_parts",
@@ -655,7 +655,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 12228 Liner 488x244x107cm"
             },
             price: 8000,
-            image: '../assets/img/liner-12228.jpg'
+            image: '/assets/img/liner-12228.jpg'
         },
         {
             sub: "intex_parts",
@@ -665,7 +665,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 12354 nozzle D-38"
             },
             price: 200,
-            image: '../assets/img/nozzle-d38.jpg'
+            image: '/assets/img/nozzle-d38.jpg'
         },
         {
             sub: "intex_parts",
@@ -675,7 +675,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 12533 Prism Frame liner 366x99cm"
             },
             price: 3900,
-            image: '../assets/img/prism-frame-liner-12533.jpg'
+            image: '/assets/img/prism-frame-liner-12533.jpg'
         },
 
         // Bazine Gonflabile EASY SET
@@ -687,7 +687,7 @@ const POOLS_PRODUCTS = {
                 en: "28101 POOL EASY SET 183X51CM, 886L"
             },
             price: 500,
-            image: '../assets/img/easy-set-28101.jpg'
+            image: '/assets/img/easy-set-28101.jpg'
         },
         {
             sub: "easy_set",
@@ -697,7 +697,7 @@ const POOLS_PRODUCTS = {
                 en: "28106 Pool Easy Set 244x61cm, 1942l, 6+ years"
             },
             price: 659,
-            image: '../assets/img/easy-set-28106.jpg'
+            image: '/assets/img/easy-set-28106.jpg'
         },
         {
             sub: "easy_set",
@@ -707,7 +707,7 @@ const POOLS_PRODUCTS = {
                 en: "28120 Pool Easy Set, 305x76cm, 3853l"
             },
             price: 1049,
-            image: '../assets/img/easy-set-28120.jpg'
+            image: '/assets/img/easy-set-28120.jpg'
         },
         {
             sub: "easy_set",
@@ -717,7 +717,7 @@ const POOLS_PRODUCTS = {
                 en: "59631 REPAIR KIT"
             },
             price: 20,
-            image: '../assets/img/repair-kit.jpg'
+            image: '/assets/img/repair-kit.jpg'
         },
 
         // Filtre pentru Bazine
@@ -729,7 +729,7 @@ const POOLS_PRODUCTS = {
                 en: "26604 Cartridge filter-pump Krystal Clear, 2006L/h, cartridge A"
             },
             price: 875,
-            image: '../assets/img/filter-pump-26604.jpg'
+            image: '/assets/img/filter-pump-26604.jpg'
         },
         {
             sub: "filters",
@@ -740,7 +740,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1800,
             oldPrice: 1999,
-            image: '../assets/img/filter-pump-26636.jpg'
+            image: '/assets/img/filter-pump-26636.jpg'
         },
         {
             sub: "filters",
@@ -750,7 +750,7 @@ const POOLS_PRODUCTS = {
                 en: "26638 Cartridge filter-pump Krystal Clear for pools up to 457 cm, 3785L/h, cartridge A"
             },
             price: 1149,
-            image: '../assets/img/filter-pump-26638.jpg'
+            image: '/assets/img/filter-pump-26638.jpg'
         },
         {
             sub: "filters",
@@ -761,7 +761,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2300,
             oldPrice: 2499,
-            image: '../assets/img/sand-filter-26642.jpg'
+            image: '/assets/img/sand-filter-26642.jpg'
         },
         {
             sub: "filters",
@@ -772,7 +772,7 @@ const POOLS_PRODUCTS = {
             },
             price: 3500,
             oldPrice: 4499,
-            image: '../assets/img/sand-filter-26644.jpg'
+            image: '/assets/img/sand-filter-26644.jpg'
         },
         {
             sub: "filters",
@@ -783,7 +783,7 @@ const POOLS_PRODUCTS = {
             },
             price: 4700,
             oldPrice: 4900,
-            image: '../assets/img/sand-filter-26646.jpg'
+            image: '/assets/img/sand-filter-26646.jpg'
         },
         {
             sub: "filters",
@@ -794,7 +794,7 @@ const POOLS_PRODUCTS = {
             },
             price: 5299,
             oldPrice: 5699,
-            image: '../assets/img/sand-filter-26648.jpg'
+            image: '/assets/img/sand-filter-26648.jpg'
         },
         {
             sub: "filters",
@@ -804,7 +804,7 @@ const POOLS_PRODUCTS = {
                 en: "26652 Sand filter-pump Krystal Clear, 12,0M3/h"
             },
             price: 5799,
-            image: '../assets/img/sand-filter-26652.jpg'
+            image: '/assets/img/sand-filter-26652.jpg'
         },
         {
             sub: "filters",
@@ -814,7 +814,7 @@ const POOLS_PRODUCTS = {
                 en: "26662 Chlorine generator (saltwater system)"
             },
             price: 1399,
-            image: '../assets/img/chlor-generator-26662.jpg'
+            image: '/assets/img/chlor-generator-26662.jpg'
         },
         {
             sub: "filters",
@@ -824,7 +824,7 @@ const POOLS_PRODUCTS = {
                 en: "26664 Chlorine generator (saltwater system)"
             },
             price: 2099,
-            image: '../assets/img/chlor-generator-26664.jpg'
+            image: '/assets/img/chlor-generator-26664.jpg'
         },
         {
             sub: "filters",
@@ -835,7 +835,7 @@ const POOLS_PRODUCTS = {
             },
             price: 5499,
             oldPrice: 7999,
-            image: '../assets/img/chlor-generator-26666.jpg'
+            image: '/assets/img/chlor-generator-26666.jpg'
         },
         {
             sub: "filters",
@@ -845,7 +845,7 @@ const POOLS_PRODUCTS = {
                 en: "26668 Chlorine generator (saltwater system)"
             },
             price: 3499,
-            image: '../assets/img/chlor-generator-26668.jpg'
+            image: '/assets/img/chlor-generator-26668.jpg'
         },
         {
             sub: "filters",
@@ -855,7 +855,7 @@ const POOLS_PRODUCTS = {
                 en: "26670 Chlorine generator Krystal Clear Saltwater System Intex"
             },
             price: 4599,
-            image: '../assets/img/chlor-generator-26670.jpg'
+            image: '/assets/img/chlor-generator-26670.jpg'
         },
         {
             sub: "filters",
@@ -865,7 +865,7 @@ const POOLS_PRODUCTS = {
                 en: "29002 Cartridge A (block of 2 pcs) for filter-pumps 28604, 28638, 28636"
             },
             price: 200,
-            image: '../assets/img/cartridge-a.jpg'
+            image: '/assets/img/cartridge-a.jpg'
         },
         {
             sub: "filters",
@@ -875,7 +875,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 29045 Fiber Ball Filler for sand filters"
             },
             price: 199,
-            image: '../assets/img/fiber-ball.jpg'
+            image: '/assets/img/fiber-ball.jpg'
         },
         {
             sub: "filters",
@@ -885,7 +885,7 @@ const POOLS_PRODUCTS = {
                 en: "Filter sand Planet Pool Quarzsand 25Kg"
             },
             price: 359,
-            image: '../assets/img/filter-sand.jpg'
+            image: '/assets/img/filter-sand.jpg'
         },
 
         // Bazine Cadru
@@ -898,7 +898,7 @@ const POOLS_PRODUCTS = {
             },
             price: 13500,
             oldPrice: 14599,
-            image: '../assets/img/ultra-frame-26326.jpg'
+            image: '/assets/img/ultra-frame-26326.jpg'
         },
         {
             sub: "frame_pools",
@@ -909,7 +909,7 @@ const POOLS_PRODUCTS = {
             },
             price: 15000,
             oldPrice: 18999,
-            image: '../assets/img/ultra-frame-26330.jpg'
+            image: '/assets/img/ultra-frame-26330.jpg'
         },
         {
             sub: "frame_pools",
@@ -920,7 +920,7 @@ const POOLS_PRODUCTS = {
             },
             price: 18399,
             oldPrice: 22999,
-            image: '../assets/img/ultra-xtr-26340.jpg'
+            image: '/assets/img/ultra-xtr-26340.jpg'
         },
         {
             sub: "frame_pools",
@@ -931,7 +931,7 @@ const POOLS_PRODUCTS = {
             },
             price: 16000,
             oldPrice: 19999,
-            image: '../assets/img/ultra-xtr-26356.jpg'
+            image: '/assets/img/ultra-xtr-26356.jpg'
         },
         {
             sub: "frame_pools",
@@ -942,7 +942,7 @@ const POOLS_PRODUCTS = {
             },
             price: 20000,
             oldPrice: 24999,
-            image: '../assets/img/ultra-xtr-26364.jpg'
+            image: '/assets/img/ultra-xtr-26364.jpg'
         },
         {
             sub: "frame_pools",
@@ -953,7 +953,7 @@ const POOLS_PRODUCTS = {
             },
             price: 28000,
             oldPrice: 34999,
-            image: '../assets/img/ultra-xtr-26374.jpg'
+            image: '/assets/img/ultra-xtr-26374.jpg'
         },
         {
             sub: "frame_pools",
@@ -964,7 +964,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1800,
             oldPrice: 2099,
-            image: '../assets/img/frame-pool-26700.jpg'
+            image: '/assets/img/frame-pool-26700.jpg'
         },
         {
             sub: "frame_pools",
@@ -975,7 +975,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2000,
             oldPrice: 2500,
-            image: '../assets/img/frame-pool-26702.jpg'
+            image: '/assets/img/frame-pool-26702.jpg'
         },
         {
             sub: "frame_pools",
@@ -986,7 +986,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1999,
             oldPrice: 2499,
-            image: '../assets/img/prism-frame-26710.jpg'
+            image: '/assets/img/prism-frame-26710.jpg'
         },
         {
             sub: "frame_pools",
@@ -997,7 +997,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2500,
             oldPrice: 3899,
-            image: '../assets/img/prism-frame-26712.jpg'
+            image: '/assets/img/prism-frame-26712.jpg'
         },
         {
             sub: "frame_pools",
@@ -1008,7 +1008,7 @@ const POOLS_PRODUCTS = {
             },
             price: 5999,
             oldPrice: 7499,
-            image: '../assets/img/prism-frame-26720.jpg'
+            image: '/assets/img/prism-frame-26720.jpg'
         },
         {
             sub: "frame_pools",
@@ -1019,7 +1019,7 @@ const POOLS_PRODUCTS = {
             },
             price: 7400,
             oldPrice: 9199,
-            image: '../assets/img/prism-frame-26726np.jpg'
+            image: '/assets/img/prism-frame-26726np.jpg'
         },
         {
             sub: "frame_pools",
@@ -1030,7 +1030,7 @@ const POOLS_PRODUCTS = {
             },
             price: 7500,
             oldPrice: 9299,
-            image: '../assets/img/greywood-prism-26742.jpg'
+            image: '/assets/img/greywood-prism-26742.jpg'
         },
         {
             sub: "frame_pools",
@@ -1041,7 +1041,7 @@ const POOLS_PRODUCTS = {
             },
             price: 10499,
             oldPrice: 13499,
-            image: '../assets/img/greywood-premium-26744.jpg'
+            image: '/assets/img/greywood-premium-26744.jpg'
         },
         {
             sub: "frame_pools",
@@ -1052,7 +1052,7 @@ const POOLS_PRODUCTS = {
             },
             price: 12000,
             oldPrice: 14999,
-            image: '../assets/img/prism-frame-26756.jpg'
+            image: '/assets/img/prism-frame-26756.jpg'
         },
         {
             sub: "frame_pools",
@@ -1062,7 +1062,7 @@ const POOLS_PRODUCTS = {
                 en: "26784 Frame pool Intex Prism Frame 300x175x80 cm + filter-pump 2006 l/h, ladder"
             },
             price: 6499,
-            image: '../assets/img/prism-frame-26784.jpg'
+            image: '/assets/img/prism-frame-26784.jpg'
         },
         {
             sub: "frame_pools",
@@ -1073,7 +1073,7 @@ const POOLS_PRODUCTS = {
             },
             price: 7200,
             oldPrice: 8999,
-            image: '../assets/img/prism-frame-rect-26788.jpg'
+            image: '/assets/img/prism-frame-rect-26788.jpg'
         },
         {
             sub: "frame_pools",
@@ -1084,7 +1084,7 @@ const POOLS_PRODUCTS = {
             },
             price: 8900,
             oldPrice: 11199,
-            image: '../assets/img/prism-frame-26790.jpg'
+            image: '/assets/img/prism-frame-26790.jpg'
         },
         {
             sub: "frame_pools",
@@ -1095,7 +1095,7 @@ const POOLS_PRODUCTS = {
             },
             price: 8500,
             oldPrice: 10999,
-            image: '../assets/img/prism-frame-rect-26792.jpg'
+            image: '/assets/img/prism-frame-rect-26792.jpg'
         },
         {
             sub: "frame_pools",
@@ -1106,7 +1106,7 @@ const POOLS_PRODUCTS = {
             },
             price: 13000,
             oldPrice: 14999,
-            image: '../assets/img/prism-frame-oval-26796.jpg'
+            image: '/assets/img/prism-frame-oval-26796.jpg'
         },
         {
             sub: "frame_pools",
@@ -1117,7 +1117,7 @@ const POOLS_PRODUCTS = {
             },
             price: 13200,
             oldPrice: 16499,
-            image: '../assets/img/prism-frame-oval-26798.jpg'
+            image: '/assets/img/prism-frame-oval-26798.jpg'
         },
         {
             sub: "frame_pools",
@@ -1128,7 +1128,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2000,
             oldPrice: 2500,
-            image: '../assets/img/metal-frame-28200.jpg'
+            image: '/assets/img/metal-frame-28200.jpg'
         },
         {
             sub: "frame_pools",
@@ -1139,7 +1139,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1299,
             oldPrice: 1499,
-            image: '../assets/img/metal-frame-28205.jpg'
+            image: '/assets/img/metal-frame-28205.jpg'
         },
         {
             sub: "frame_pools",
@@ -1150,7 +1150,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2000,
             oldPrice: 2500,
-            image: '../assets/img/metal-frame-28210.jpg'
+            image: '/assets/img/metal-frame-28210.jpg'
         },
         {
             sub: "frame_pools",
@@ -1161,7 +1161,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2500,
             oldPrice: 3799,
-            image: '../assets/img/metal-frame-28212.jpg'
+            image: '/assets/img/metal-frame-28212.jpg'
         },
         {
             sub: "frame_pools",
@@ -1172,7 +1172,7 @@ const POOLS_PRODUCTS = {
             },
             price: 7000,
             oldPrice: 8999,
-            image: '../assets/img/metal-frame-28242.jpg'
+            image: '/assets/img/metal-frame-28242.jpg'
         },
         {
             sub: "frame_pools",
@@ -1183,7 +1183,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1400,
             oldPrice: 1700,
-            image: '../assets/img/rectangular-pool-28270.jpg'
+            image: '/assets/img/rectangular-pool-28270.jpg'
         },
         {
             sub: "frame_pools",
@@ -1194,7 +1194,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1550,
             oldPrice: 1899,
-            image: '../assets/img/rectangular-pool-28271.jpg'
+            image: '/assets/img/rectangular-pool-28271.jpg'
         },
         {
             sub: "frame_pools",
@@ -1205,7 +1205,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2000,
             oldPrice: 2200,
-            image: '../assets/img/rectangular-pool-28272.jpg'
+            image: '/assets/img/rectangular-pool-28272.jpg'
         },
         {
             sub: "frame_pools",
@@ -1216,7 +1216,7 @@ const POOLS_PRODUCTS = {
             },
             price: 3000,
             oldPrice: 3699,
-            image: '../assets/img/rectangular-pool-28273.jpg'
+            image: '/assets/img/rectangular-pool-28273.jpg'
         },
         {
             sub: "frame_pools",
@@ -1227,7 +1227,7 @@ const POOLS_PRODUCTS = {
             },
             price: 3700,
             oldPrice: 4599,
-            image: '../assets/img/rectangular-pool-28274.jpg'
+            image: '/assets/img/rectangular-pool-28274.jpg'
         },
         {
             sub: "frame_pools",
@@ -1237,7 +1237,7 @@ const POOLS_PRODUCTS = {
                 en: "59631 REPAIR KIT"
             },
             price: 20,
-            image: '../assets/img/repair-kit.jpg'
+            image: '/assets/img/repair-kit.jpg'
         },
         {
             sub: "frame_pools",
@@ -1248,7 +1248,7 @@ const POOLS_PRODUCTS = {
             },
             price: 24000,
             oldPrice: 29999,
-            image: '../assets/img/ultra-xtr-26368.jpg'
+            image: '/assets/img/ultra-xtr-26368.jpg'
         },
         {
             sub: "frame_pools",
@@ -1259,7 +1259,7 @@ const POOLS_PRODUCTS = {
             },
             price: 32000,
             oldPrice: 39999,
-            image: '../assets/img/ultra-xtr-26378.jpg'
+            image: '/assets/img/ultra-xtr-26378.jpg'
         },
         {
             sub: "frame_pools",
@@ -1270,7 +1270,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2150,
             oldPrice: 2349,
-            image: '../assets/img/frame-pool-26700-3.jpg'
+            image: '/assets/img/frame-pool-26700-3.jpg'
         },
         {
             sub: "frame_pools",
@@ -1281,7 +1281,7 @@ const POOLS_PRODUCTS = {
             },
             price: 4200,
             oldPrice: 5299,
-            image: '../assets/img/prism-frame-26716.jpg'
+            image: '/assets/img/prism-frame-26716.jpg'
         },
         {
             sub: "frame_pools",
@@ -1291,7 +1291,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26716-1 Frame pool 366x99cm WITH SAND FILTER"
             },
             price: 6999,
-            image: '../assets/img/prism-frame-26716-1.jpg'
+            image: '/assets/img/prism-frame-26716-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1301,7 +1301,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26717 Frame pool Prism Frame 366x99cm"
             },
             price: 3900,
-            image: '../assets/img/prism-frame-26717.jpg'
+            image: '/assets/img/prism-frame-26717.jpg'
         },
         {
             sub: "frame_pools",
@@ -1311,7 +1311,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26726-1 FRAME POOL 4,57X1,22 WITH SAND FILTER"
             },
             price: 10550,
-            image: '../assets/img/frame-pool-26726-1.jpg'
+            image: '/assets/img/frame-pool-26726-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1321,7 +1321,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26742-1 Frame pool 457x122 cm WITH SAND FILTER"
             },
             price: 10650,
-            image: '../assets/img/greywood-26742-1.jpg'
+            image: '/assets/img/greywood-26742-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1331,7 +1331,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26756-1 FRAME POOL 610X132cm WITH SAND FILTER"
             },
             price: 17500,
-            image: '../assets/img/prism-frame-26756-1.jpg'
+            image: '/assets/img/prism-frame-26756-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1342,7 +1342,7 @@ const POOLS_PRODUCTS = {
             },
             price: 7600,
             oldPrice: 9499,
-            image: '../assets/img/chevron-prism-26780.jpg'
+            image: '/assets/img/chevron-prism-26780.jpg'
         },
         {
             sub: "frame_pools",
@@ -1352,7 +1352,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26788-3 New, frame pool 400 x 200 x 100 cm (with cover 28037)"
             },
             price: 9350,
-            image: '../assets/img/prism-frame-26788-3.jpg'
+            image: '/assets/img/prism-frame-26788-3.jpg'
         },
         {
             sub: "frame_pools",
@@ -1362,7 +1362,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26790-1 Frame pool 400x200x122cm WITH SAND FILTER"
             },
             price: 12850,
-            image: '../assets/img/prism-frame-26790-1.jpg'
+            image: '/assets/img/prism-frame-26790-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1372,7 +1372,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26790-3 New, frame pool 400 x 200 x 122 cm (with cover 28037)"
             },
             price: 11250,
-            image: '../assets/img/prism-frame-26790-3.jpg'
+            image: '/assets/img/prism-frame-26790-3.jpg'
         },
         {
             sub: "frame_pools",
@@ -1382,7 +1382,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26792-1 FRAME POOL 488X244X107cm WITH SAND FILTER"
             },
             price: 12399,
-            image: '../assets/img/prism-frame-26792-1.jpg'
+            image: '/assets/img/prism-frame-26792-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1392,7 +1392,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26796-1 FRAME POOL 503X274X122cm WITH SAND FILTER"
             },
             price: 16500,
-            image: '../assets/img/prism-frame-oval-26796-1.jpg'
+            image: '/assets/img/prism-frame-oval-26796-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1402,7 +1402,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 26798-1 FRAME POOL 610X305X122cm WITH SAND FILTER"
             },
             price: 18999,
-            image: '../assets/img/prism-frame-oval-26798-1.jpg'
+            image: '/assets/img/prism-frame-oval-26798-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1413,7 +1413,7 @@ const POOLS_PRODUCTS = {
             },
             price: 2000,
             oldPrice: 2500,
-            image: '../assets/img/metal-frame-28202.jpg'
+            image: '/assets/img/metal-frame-28202.jpg'
         },
         {
             sub: "frame_pools",
@@ -1423,7 +1423,7 @@ const POOLS_PRODUCTS = {
                 en: "Intex 28209NP Frame pool 183 x 38 cm Canopy Metal Frame Pool"
             },
             price: 1999,
-            image: '../assets/img/canopy-metal-frame-28209np.jpg'
+            image: '/assets/img/canopy-metal-frame-28209np.jpg'
         },
         {
             sub: "frame_pools",
@@ -1434,7 +1434,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1600,
             oldPrice: 1999,
-            image: '../assets/img/pink-metal-frame-28266.jpg'
+            image: '/assets/img/pink-metal-frame-28266.jpg'
         },
         {
             sub: "frame_pools",
@@ -1444,7 +1444,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 28272-1 FRAME POOL 300X200X75cm WITH FILTER 2000l/h"
             },
             price: 3000,
-            image: '../assets/img/rectangular-pool-28272-1.jpg'
+            image: '/assets/img/rectangular-pool-28272-1.jpg'
         },
         {
             sub: "frame_pools",
@@ -1454,7 +1454,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 28272-3 New, frame pool 300 x 200 x 75 cm (with cover 28038)"
             },
             price: 2475,
-            image: '../assets/img/rectangular-pool-28272-3.jpg'
+            image: '/assets/img/rectangular-pool-28272-3.jpg'
         },
         {
             sub: "frame_pools",
@@ -1464,7 +1464,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 28273-3 New, frame pool 450 x 220 x 84 cm (with cover 28039)"
             },
             price: 4049,
-            image: '../assets/img/rectangular-pool-28273-3.jpg'
+            image: '/assets/img/rectangular-pool-28273-3.jpg'
         },
         {
             sub: "frame_pools",
@@ -1474,7 +1474,7 @@ const POOLS_PRODUCTS = {
                 en: "INTEX 28274-3 New, frame pool 450 x 220 x 84 cm with filter-pump (with cover 28039)"
             },
             price: 4949,
-            image: '../assets/img/rectangular-pool-28274-3.jpg'
+            image: '/assets/img/rectangular-pool-28274-3.jpg'
         },
         {
             sub: "frame_pools",
@@ -1485,7 +1485,7 @@ const POOLS_PRODUCTS = {
             },
             price: 1400,
             oldPrice: 1699,
-            image: '../assets/img/pink-metal-frame-28290.jpg'
+            image: '/assets/img/pink-metal-frame-28290.jpg'
         },
         {
             sub: "frame_pools",
@@ -1495,7 +1495,7 @@ const POOLS_PRODUCTS = {
                 en: "Full face panoramic swimming mask XS"
             },
             price: 450,
-            image: '../assets/img/full-face-mask-xs.jpg'
+            image: '/assets/img/full-face-mask-xs.jpg'
         }
     ]
 };
